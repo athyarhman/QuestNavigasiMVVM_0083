@@ -36,15 +36,15 @@ fun FormIsian(
     Scaffold (modifier=Modifier,
         {
             TopAppBar(
-                title = {Text(stringResource(id= R.string.home), color = Color.White)},
+                title = {Text(stringResource(R.string.home), color = Color.White)},
                 colors = TopAppBarDefaults.mediumTopAppBarColors(
-                    colorResource(id = R.color.teal_700))
+                    colorResource( R.color.teal_700))
             ) }
 
     ){ isiRuang ->
         Column(modifier = Modifier.padding(isiRuang),
             verticalArrangement = Arrangement.Top,
-            horizontalArrangement = Alignment.CenterHorizontally) {
+            horizontalAlignment = Alignment.CenterHorizontally) {
             OutlinedTextField(
                 value = "",
                 singleLine = true,
@@ -62,7 +62,7 @@ fun FormIsian(
                     item ->
                     Row(verticalAlignment = Alignment.CenterVertically){
                         RadioButton(
-                            selected = false
+                            selected = false,
                             onClick = {item}
                         )
                         Text(text=item)
