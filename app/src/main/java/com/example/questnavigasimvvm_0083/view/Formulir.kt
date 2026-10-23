@@ -2,7 +2,7 @@ package com.example.questnavigasimvvm_0083.view
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.R
+import com.example.questnavigasimvvm_0083.R
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -87,7 +87,7 @@ fun FormIsian(
                     .padding(all = 25.dp),
                 onClick = OnSubmitBtnClick
             ){
-                Text(stringResource(id = R.string.submit))
+                Text(stringResource(R.string.submit))
             }
         }
     }
